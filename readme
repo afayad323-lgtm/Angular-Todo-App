@@ -1,0 +1,32 @@
+# Angular Todo App
+
+Simple Todo List application built with Angular.
+
+## 📌 Features
+
+* Add new task
+* Delete task
+* Clean and simple UI
+
+## 🛠 Technologies Used
+
+* Angular
+* TypeScript
+* Bootstrap
+
+## 🚀 How to Run
+
+```bash
+npm install
+ng serve
+```
+
+Then open:
+
+```
+http://localhost:4200
+```
+
+## 👨‍💻 Author
+
+Ahmed Fayad
