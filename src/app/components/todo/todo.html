@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <h2>Todo App</h2>
+  <ul class="list-group">
+    @for (task of tasks; track $index) {
+      <li class="list-group-item d-flex justify-content-between">
+        {{ task }}
+        <button class="btn btn-danger btn-sm" (click)="deleteTask($index)">Delete</button>
+      </li>
+    }
+  </ul>
+  <input type="text" [(ngModel)]="newtask" class="form-control mb-3" placeholder="Enter task" />
+  <button class="btn btn-primary mb-3" (click)="addTask()">Add Task</button>
+</div>
