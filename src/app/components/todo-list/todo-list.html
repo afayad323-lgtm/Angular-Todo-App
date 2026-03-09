@@ -1,0 +1,11 @@
+<ul class="list-group">
+  @for (task of tasks; track $index) {
+    <app-todo-item
+      [task]="task"
+      [index]="$index"
+      (deleteTask)="deleteTaskEvent.emit($event)"
+      (editTask)="editTaskEvent.emit($event)"
+    >
+    </app-todo-item>
+  }
+</ul>

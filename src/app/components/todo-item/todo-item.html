@@ -1,0 +1,15 @@
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  @if (!isEditing) {
+    {{ task }}
+  } @else {
+    <input class="form-control" [(ngModel)]="editedTask" />
+  }
+  <div class="d-flex gap-2">
+    <button class="btn btn-danger btn-sm" (click)="onDelete()">Delete</button>
+    @if (!isEditing) {
+      <button class="btn btn-warning btn-sm" (click)="startEdit()">Edit</button>
+    } @else {
+      <button class="btn btn-success btn-sm" (click)="saveEdit()">Save</button>
+    }
+  </div>
+</li>
